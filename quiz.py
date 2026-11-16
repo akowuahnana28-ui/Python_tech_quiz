@@ -39,7 +39,15 @@ for item in questions:
 print("\nQuiz finished!")
 print("Your score:", score, "out of", len(questions))
 
+while True:
+  answer = input("Your answer (A, B, or C): ").strip().upper()
 
+  if answer in ["A", "B", "C"]:
+    break
+  else:
+    print("Invalid choice. Please enter A, B or C.")
+
+                 
 
         
 
